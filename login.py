@@ -118,7 +118,7 @@ class student:
     def add_students(self):    
         
            
-            con=pymysql.connect(host="localhost",user="root",password="",database="stm")
+            con=pymysql.connect(host="localhost",user="root",password="",database="stms")
             cur=con.cursor()
             cur.execute("insert into student values(%s,%s,%s,%s,%s,%s,%s)",(self.roll_no_var.get(),
                                                                             self.name_var.get(),
